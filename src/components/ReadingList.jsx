@@ -5,7 +5,7 @@ const ReadingList = () => {
     <div className="reading-list">
       <h3>1 Reading List</h3>
       <div className="list-item">
-        <h4>Hhs_200222's Reading List</h4>
+        <h4>Hhs_200222's Reading Lists</h4>
         <p>Reading List • 2 Stories</p>
       </div>
     </div>

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import ProfileHeader from '../components/ProfileHeader';
 import ProfileTabs from '../components/ProfileTabs';
 import ProfileDetails from '../components/ProfileDetails';
 import ReadingList from '../components/ReadingList';
-import Conversations from '../components/Conversations';
+import Conversations from '../pages/Conversations';
 import Following from '../components/Following';
 import "./Profile.css";
 
@@ -13,16 +13,29 @@ const ProfilePage = () => {
     <div className="profile-page">
       <ProfileHeader />
       <ProfileTabs />
+
       <div className="profile-content">
-        <ProfileDetails />
-        <ReadingList />
+        <Outlet/>
       </div>
 
-      <Routes>
-        <Route path="about" element={<ProfileDetails />} />
-        <Route path="conversations" element={<Conversations />} />
-        <Route path="following" element={<Following />} />
-      </Routes>
+
+
+      {/* <Routes>
+        <Route path="/profile/about" element={
+          <div className="profile-content">
+            <ProfileDetails />
+            <ReadingList />
+          </div>
+        } />
+        <Route path="/profile/conversations" element={<Conversations />} />
+        <Route path="/profile/following" element={<Following />} />
+      </Routes> */}
+      
+      {/* <div>
+        
+        <Outlet/>
+      </div> */}
+           
 
     </div>
   );

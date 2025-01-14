@@ -1,0 +1,81 @@
+/* General container styling */
+.conversations-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Profile Header */
+  /*.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .profile-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }*/
+  
+  /* Input Container */
+  .input-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .input-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+  }
+  
+  .message-input::placeholder {
+    color: #b0b0b0;
+  }
+  
+  .post-button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .post-button:hover {
+    background-color: navy;
+  }
+  
+  

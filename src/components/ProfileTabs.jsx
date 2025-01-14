@@ -7,25 +7,29 @@ const ProfileTabs = () => {
 
   return (
     <div className="profile-tabs">
-      <button
-        className={activeTab === 'about' ? 'active' : ''}
-        onClick={() => setActiveTab('about')}
-        
-      >
-        <Link to="about" className="tab">About</Link>
-      </button>
-      <button
-        className={activeTab === 'conversations' ? 'active' : ''}
-        onClick={() => setActiveTab('conversations')}
-      >
-        <Link to="conversations" className="tab">Conversations</Link>
-      </button>
-      <button
-        className={activeTab === 'following' ? 'active' : ''}
-        onClick={() => setActiveTab('following')}
-      >
-        <Link to="following" className="tab">Following</Link>
-      </button>
+
+      <Link to="/profile/about" className="tab">
+        <button className={activeTab === 'about' ? 'active' : ''}
+          onClick={() => setActiveTab('about')} >
+          About
+        </button>
+      </Link>
+
+      <Link to="/profile/conversations" className="tab">
+        <button
+          className={activeTab === 'conversations' ? 'active' : ''}
+          onClick={() => setActiveTab('conversations')}>
+          Conversations
+        </button>
+      </Link>
+
+      <Link to="/profile/following" className="tab">
+        <button
+          className={activeTab === 'following' ? 'active' : ''}
+          onClick={() => setActiveTab('following')}>
+          Following
+        </button>
+      </Link>
 
     </div>
   );
