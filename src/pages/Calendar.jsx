@@ -37,7 +37,7 @@ function CalendarPage() {
 
   return (
     <div className="calendar-page">
-      <h1>My Diary Calendar</h1>
+      <h2>My Diary Calendar</h2>
       <p>Click on a day to view entries!</p>
       <Calendar
         onChange={handleDateClick} // When a date is clicked
@@ -49,4 +49,54 @@ function CalendarPage() {
 }
 
 export default CalendarPage;
+
+
+
+// import React, { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import './Calendar.css';
+
+// const CalendarPage = () => {
+//   const navigate = useNavigate();
+//   const [entries, setEntries] = useState({
+//     '2025-01-14': 'Story for Jan 14',
+//     '2025-01-15': 'Story for Jan 15',
+//   });
+
+//   const today = new Date().toISOString().split('T')[0];
+
+//   const daysInMonth = (year, month) => new Date(year, month + 1, 0).getDate();
+
+//   const renderCalendar = () => {
+//     const currentDate = new Date();
+//     const year = currentDate.getFullYear();
+//     const month = currentDate.getMonth();
+//     const days = daysInMonth(year, month);
+
+//     const calendarDays = [];
+
+//     for (let day = 1; day <= days; day++) {
+//       const date = new Date(year, month, day).toISOString().split('T')[0];
+//       calendarDays.push(
+//         <div
+//           key={date}
+//           className={`calendar-day ${date === today ? 'today' : ''} ${entries[date] ? 'has-entry' : ''}`}
+//           onClick={() => entries[date] && navigate(`/entry/${date}`)}
+//         >
+//           <span>{day}</span>
+//         </div>
+//       );
+//     }
+//     return calendarDays;
+//   };
+
+//   return (
+//     <div className="calendar-container">
+//       <h2>Calendar</h2>
+//       <div className="calendar-grid">{renderCalendar()}</div>
+//     </div>
+//   );
+// };
+
+// export default CalendarPage;
 

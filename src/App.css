@@ -1,51 +1,9 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
 
 body{
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f8ff;
-  color:  #000080;
+  background-color: #f8e5ce;
+  color:  #45220d;
 }
 
 .header{
@@ -56,9 +14,9 @@ body{
   position: sticky;
   width: 100%;
   height: auto;
-  background-color: #000080;
+  background-color: #45220d;
   top: 0;
-  color: #f8f8ff;
+  color: #f8e5ce;
   font-size: 18px;
 }
 
@@ -83,7 +41,7 @@ div{
 
 .navlinks1 a{
   text-decoration: none;
-  color: #f8f8ff;
+  color: #f8e5ce;
 }
 
 .navlinks1 li{
@@ -129,7 +87,7 @@ li{
   display: flex;
   padding: 8px 12px;
   background: none;
-  background-color: white;
+  background-color: #f8e5ce;
   border: none;
   cursor: pointer;
   top: 50%;
@@ -145,7 +103,7 @@ li{
   border-radius: 6px;
   border: 1px solid;
   color: rgb(46, 46, 46);
-  background-image: white;
+  background-image: #f8e5ce;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -171,7 +129,7 @@ li{
 
 .nav_links2 a{
   text-decoration: none;
-  color: #f8f8ff;
+  color: #f8e5ce;
   padding-right: 12px;
   display: flex;
 }
@@ -180,14 +138,14 @@ li{
   cursor: pointer;
   border: none;
   width: max-content;
-  color: #f8f8ff;
+  color: #f8e5ce;
   text-align: center;
   font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2px;
-  border-radius: 24px;
+  border-radius: 25px;
   background: #1290ff63;
   padding: 8px 20px;
   margin-right: 16px;
@@ -217,7 +175,7 @@ li{
   width: 80%;
   max-width: 900px;
   margin: 40px auto;
-  background-color: #fff;
+  background-color: #f8e5ce;
   border: 1px solid #ccc;
   border-radius: 10px;
   display: flex;

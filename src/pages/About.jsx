@@ -5,6 +5,7 @@ import "./Profile.css";
 
 const About = () => {
     return (
+        
         <div className="profile-content">
             <ProfileDetails />
             <ReadingList />
