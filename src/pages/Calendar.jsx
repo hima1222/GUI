@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Calendar from "react-calendar"; // Import the calendar library
 import "react-calendar/dist/Calendar.css"; // Import the calendar styles
 import "./Calendar.css"; // Import your custom styles
+import banner1 from '../assets/banner_1.jpg';
 
 function CalendarPage() {
   const [selectedDate, setSelectedDate] = useState(new Date()); // Current selected date
@@ -37,6 +38,10 @@ function CalendarPage() {
 
   return (
     <div className="calendar-page">
+      <section>
+        <img src={banner1} alt="Banner" className="banner1" />
+      </section>
+      
       <h2>My Diary Calendar</h2>
       <p>Click on a day to view entries!</p>
       <Calendar

@@ -3,6 +3,7 @@ import LatestEntry from './LatestEntry';
 import QuickLinks from './QuickLinks';
 import DailyQuote from './DailyQuote';
 import diaryImage from '../assets/diary_image.jpg';
+import cover1 from '../assets/cover 1.jpg';
 
 const Main = () => {
   return (
@@ -14,7 +15,7 @@ const Main = () => {
           <a href="#public-entries" className="read-button_title">Read Public Entries</a>
         </div>
         <div className="column_title">
-          <img src={diaryImage} alt="Journal Image" className="journal-image" />
+          <img src={cover1} alt="Journal Image" className="journal-image" />
         </div>
       </div>
 

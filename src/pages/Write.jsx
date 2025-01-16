@@ -19,7 +19,7 @@ export default function Write() {
 
       {/* Action Buttons */}
       <div className="action-buttons">
-        <button onClick={() => setShowNewEntryForm(true)}>Write New Entry</button>
+        <button onClick={() => setShowNewEntryForm(true)}> Write New Entry </button>
         <button>Update Entry</button>
         <button>Read Old Entries</button>
       </div>
