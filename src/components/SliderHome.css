@@ -1,0 +1,40 @@
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+    font-family: "Arial", sans-serif;
+  }
+  
+  .slide-content h2 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .slide-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

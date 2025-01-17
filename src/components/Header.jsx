@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import logoIcon from '../assets/logo_image.jpg';
+import logoIcon from '../assets/logo.png';
 import searchIcon from '../assets/search_icon.svg';
 import premiumIcon from '../assets/premium_img.svg';
 import profileIcon from '../assets/profile_icon.svg';

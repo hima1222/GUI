@@ -15,7 +15,7 @@ const Main = () => {
           <a href="#public-entries" className="read-button_title">Read Public Entries</a>
         </div>
         <div className="column_title">
-          <img src={cover1} alt="Journal Image" className="journal-image" />
+          <img src={cover1} alt="Journal Image" className="journal-image"/>
         </div>
       </div>
 
