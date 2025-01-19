@@ -1,10 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./SliderHome.css";
+
+// SwiperCore.use([Navigation, Pagination]);
 
 //import images
 import sliderimg1 from '../assets/slider1.jpg';
@@ -19,27 +21,27 @@ const Slider = () => {
   const slides = [
     {
       image: sliderimg1,
-      title: "Intuitive Workflow",
+      title: "Every day is a new beginning",
     },
     {
         image: sliderimg2,
-        title: "Intuitive Workflow",
+        title: "Savor the little things",
     },
     {
         image: sliderimg3,
-        title: "Intuitive Workflow",
+        title: "Today is a gift",
     },
     {
         image: sliderimg4,
-        title: "Intuitive Workflow",
+        title: "Never give up on your dreams",
     },
     {
         image: sliderimg5,
-        title: "Intuitive Workflow",
+        title: "In the midst of winter, I found there was, within me, an invincible summer",
     },
     {
         image: sliderimg6,
-        title: "Intuitive Workflow",
+        title: "The best time for new beginnings is now",
     },
   ];
 
@@ -59,12 +61,15 @@ const Slider = () => {
             <div className="slide">
               <img src={slide.image} alt={slide.title} />
               <div className="slide-content">
-                <h2>{slide.title}</h2>
-                <p>Read more</p>
+                <h4>{slide.title}</h4>
+                {/* <p>Read more</p> */}
               </div>
             </div>
           </SwiperSlide>
-        ))}
+        ))}  
+
+        {/* <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide> */}
       </Swiper>
     </div>
   );

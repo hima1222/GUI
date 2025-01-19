@@ -1,7 +1,8 @@
 .slider-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    z-index: 1;
   }
   
   .slide {
@@ -26,9 +27,12 @@
     font-family: "Arial", sans-serif;
   }
   
-  .slide-content h2 {
-    font-size: 1.8rem;
+  .slide-content h4 {
+    font-size: 1.2rem;
     margin: 0;
+    color: #f7d196;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .slide-content p {
@@ -37,4 +41,5 @@
     text-decoration: underline;
     cursor: pointer;
   }
+  
   

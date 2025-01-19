@@ -8,6 +8,10 @@
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #763b16;
+    border: none;
+    border-radius: 8px;
+    color: #f7d196;
 }
   
   .entries-container {
@@ -58,7 +62,7 @@
   }
   
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: #763b16;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -67,6 +71,6 @@
   }
   
   button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #45220d;
   }
   
