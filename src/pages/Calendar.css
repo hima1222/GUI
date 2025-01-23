@@ -27,27 +27,27 @@
 
 /* Styling for today's date */
 .react-calendar__tile.today {
-  background-color: #4c90e0;
+  background-color: #ca8e56;
   color: white;
   font-weight: bold;
   transform: scale(0.5);
 }
 
 .react-calendar__tile.today:hover {
-  background-color: #0066cc;
+  background-color: #815934;
   transform: scale(0.5);
 }
 
 /* Styling for dates with diary entries */
 .react-calendar__tile.diary-entry-day {
-  background-color: #f0ad4e;
-  color: white;
+  background-color: #c4a577;
+  color: #763b16;
   font-weight: bold;
   transform: scale(0.5);
 }
 
 .react-calendar__tile.diary-entry-day:hover {
-  background-color: #ec971f;
+  background-color: #f7d196;
   transform: scale(0.5);
 }
 

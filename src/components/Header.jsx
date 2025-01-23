@@ -31,7 +31,7 @@ const Header = () => {
 
       <div className="search_box">
         <form className="search_form">
-          <button type="submit" className="s_button">
+          <button type="submit" className="search_button">
             <img src={searchIcon} alt="search icon" className="search_img" />
           </button>
           <input type="text" placeholder="Search..." className="searchbar" />
