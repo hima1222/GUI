@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Write.css"; // Add custom styles here
+import "./Write.css"; 
 
 export default function Write() {
   const [showNewEntryForm, setShowNewEntryForm] = useState(false);

@@ -1,73 +1,49 @@
+body {  
+    margin: 0;
+    padding: 0;
+    background-color: #2a2b31;
+    font-family: Arial, sans-serif;
+}
+
 .welcome-container {
     height: 100vh;
+    width: 100%;
+    background-image: url('../assets/welcomeImage.jpg');  
+    /* background-size: fixed; */
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: #fff;
-    font-family: Arial, sans-serif;
-  }
-  
-  .welcome-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FF5A5F;
-  }
-  
-  .nav-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .signup-btn {
-    background-color: #FF5A5F;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .welcome-content {
+    justify-content: flex-start; 
+    padding-top: 50px; 
+    box-sizing: border-box;
+}
+
+.welcome-content {
     text-align: center;
-    margin-top: 100px;
-  }
-  
-  h1 {
+    background-color: #f7d09676; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
     font-size: 48px;
-    color: #FF5A5F;
+    color: #45220d;
     margin-bottom: 10px;
-  }
-  
-  p {
+}
+
+p {
     font-size: 18px;
-    color: #555;
-  }
-  
-  .welcome-buttons button {
-    background-color: #FF5A5F;
-    color: white;
+    color: #763b16;
+}
+
+.welcome-buttons button {
+    background-color: #45220d;
+    color: #f7d196;
     border: none;
     padding: 12px 24px;
     margin: 10px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-  }
-  
-  .device-preview img {
-    width: 300px;
-    margin: 20px;
-  }
-  
+}

@@ -5,15 +5,15 @@ const QuickLinks = () => {
     <div className="quick-links-container">
       <h2 className="quick-links-title">Quick Links</h2>
       <div className="quick-links">
-        <a href="#new-entry" className="link-button">
+        <a href="#Write" className="link-button">
           <span className="link-icon">📝</span>
           <span className="link-label">New Entry</span>
         </a>
-        <a href="#calendar" className="link-button">
+        <a href="#Calendar" className="link-button">
           <span className="link-icon">📅</span>
           <span className="link-label">Calendar</span>
         </a>
-        <a href="#profile" className="link-button">
+        <a href="#Profile" className="link-button">
           <span className="link-icon">👤</span>
           <span className="link-label">Profile</span>
         </a>
