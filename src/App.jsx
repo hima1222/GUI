@@ -11,6 +11,7 @@ import Profile from "./pages/Profile";
 import About from "./pages/About";
 import Conversations from "./pages/Conversations";
 import Following from "./pages/Following";
+import Welcome from "./pages/Welcome";
 
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
 
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Welcome />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/Write" element={<Write />} />
           <Route path="/Calender" element={<Calender />} />
           <Route path="/Settings" element={<Settings />} />
