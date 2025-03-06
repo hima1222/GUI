@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import './Welcome.css';
+import SignupPage from './SignupPage';
 
 const Welcome = () => {
   return (
@@ -9,8 +10,9 @@ const Welcome = () => {
         <h1>Hi, This is SoulScribbles.</h1>
         <p>The best platform for sharing your stories and creativity.</p>
         <div className="welcome-buttons">
-          <button onClick={() => navigate('/SignupPage')}>LogIn</button>
-          <button onClick={() => navigate('/SignupPage')}>SignUp</button>
+          <button onClick={() => Navigate('/SignupPage')}> LogIn </button>
+
+          <button onClick={() => Navigate('/SignupPage')}> SignUp </button>
         </div>
       </div>
     </div>

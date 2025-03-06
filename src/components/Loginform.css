@@ -7,14 +7,18 @@
     margin: 0;
   }
   
-  .container {
+.container {
     position: relative;
-    width: 600px;
-    height: 450px;
-    background: white;
+    width: 700px;
+    height: 400px;
+    background: #f7d196;
+    background-image: url('../assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 435px ;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
+}
   
 .form {
     position: absolute;
@@ -30,23 +34,35 @@
 .form h2 {
     margin-bottom: 15px;
     font-size: 22px;
+    color: #763b16;
 }
   
 .container input {
     margin: 5px 0;
     padding: 8px;
     width: 80%;
+    border: none;
+    border-style: none;
+    border-radius: 15px;
 }
-  
+
+.container input:focus{
+    border-color: #45220d;
+}
+
 .container button {
     padding: 8px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: #45220d;
+    color: #f8e5ce;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
 }
   
+.container button:hover{
+    background-color: #763b16;
+}
  
 .login {
     left: 0;
@@ -60,18 +76,21 @@
     pointer-events: none;
 }
 .container p span {
-    color: #007bff;
+    color: #45220d;
     cursor: pointer;
 }
   
-  
+.container p span:hover{
+    color: #f8e5ce;
+}
+
 .yellow-box {
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: #ffd700;
+    background-color: #ca8e56;
     transition: transform 0.5s ease;
     z-index: 1;
 }
