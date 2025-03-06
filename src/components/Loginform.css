@@ -1,73 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-body {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
-}
-
-.container {
+    height: 100vh;
+    /* background-color: #f4f4f4; */
+    margin: 0;
+  }
+  
+  .container {
     position: relative;
-    width: 480px;
-    height: 550px;
-    background: #fff;
-    margin: 20px;
-    padding: 30px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: 450px;
+    background: white;
     overflow: hidden;
-}
-
-.container h1 {
-    font-size: 36px;
-    margin: -10px 0 20px;
-}
-
-.input-box {
-    position: relative;
-    margin: 30px 0;
-}
-
-.input-box input {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    outline: none;
-    border-radius: 5px;
-}
-
-.input-box i {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+.form {
     position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #555;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
 }
-
-.forgot-link a {
-    color: #555;
-    font-size: 14px;
+  
+.form h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
 }
-
-.btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #6c63ff;
+  
+.container input {
+    margin: 5px 0;
+    padding: 8px;
+    width: 80%;
+}
+  
+.container button {
+    padding: 8px 20px;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
 }
+  
+ 
+.login {
+    left: 0;
+    z-index: 2;
+}
+  
+ 
+.signup {
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.container p span {
+    color: #007bff;
+    cursor: pointer;
+}
+  
+  
+.yellow-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ffd700;
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+  
+  
+.container.sign-up .yellow-box {
+    transform: translateX(100%);
+}
+  
+  
+.container.sign-up .login {
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.container.sign-up .signup {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+}
+  

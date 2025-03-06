@@ -176,11 +176,11 @@ li{
   flex-direction: column;
 } 
 
-.container {
+.main_container {
   width: 80%;
   max-width: 900px;
   margin: 40px auto;
-  background-color: #f8e5ce;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
   display: flex;

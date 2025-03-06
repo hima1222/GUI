@@ -12,30 +12,29 @@ import About from "./pages/About";
 import Conversations from "./pages/Conversations";
 import Following from "./pages/Following";
 import Welcome from "./pages/Welcome";
+import SignupPage from './pages/SignupPage';
+import Layout from './pages/Layout';
 
 const App = () => {
   return (
     <Router>
       <div className="app">
-        {/* Header */}
-        <Header />
-
-        {/* Main Content*/}
-        {/* <Main />  */}
         
-
+        {/* <Header /> */}
+        
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/Write" element={<Write />} />
-          <Route path="/Calender" element={<Calender />} />
-          <Route path="/Settings" element={<Settings />} />
-          <Route path="/profile/*" element={<Profile />}> 
-            <Route path="about" element={<About/>} />
-            <Route path="conversations" element={<Conversations />} /> 
-            <Route path="following" element={<Following />} /> 
+          <Route path="/" element={<Layout><Welcome /></Layout>} />
+          <Route path="/home" element={<Layout><Home /></Layout>} />
+          <Route path="/Write" element={<Layout><Write /></Layout>} />
+          <Route path="/Calender" element={<Layout><Write /></Layout>} />
+          <Route path="/Settings" element={<Layout><Settings /></Layout>} />
+          <Route path="/profile/*" element={<Layout><Profile /></Layout>}> 
+            <Route path="about" element={<Layout><About/></Layout>} />
+            <Route path="conversations" element={<Layout><Conversations /></Layout>} />  
+            <Route path="following" element={<Layout><Following /></Layout>} /> 
           </Route>
+          <Route path="/signupPage" element={<SignupPage/>} />
         </Routes>
       </div>
     </Router>

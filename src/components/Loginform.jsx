@@ -1,32 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Loginform.css';
 
-const Loginform = () => {
+function AuthForm() {
+  const [isSignUp, setIsSignUp] = React.useState(false);
+
+  let containerClass = 'container';
+  if (isSignUp) {
+    containerClass += ' sign-up';
+  }
+
   return (
-    <div className="container">
-      <div className="form-box login">
-        <form action="">
-          <h1>Login</h1>
-
-          <div className="input-box">
-            <input type="text" placeholder="Username" required />
-            <i className="bx bxs-user"></i>
-          </div>
-
-          <div className="input-box">
-            <input type="password" placeholder="Password" required />
-            <i className="bx bxs-lock-alt"></i>
-          </div>
-
-          <div className="forgot-link">
-            <a href="#">Forgot Password?</a>
-          </div>
-
-          <button type="submit" className="btn">Login</button>
-        </form>
+    <div className={containerClass}>
+      <div className="form login">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+        <p>
+          Don’t have an account? <span onClick={() => setIsSignUp(true)}>Register</span>
+        </p>
       </div>
+
+      <div className="form signup">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Username" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Sign Up</button>
+        <p>
+          Already have an account? <span onClick={() => setIsSignUp(false)}>Login</span>
+        </p>
+      </div>
+
+      <div className="yellow-box"></div>
     </div>
   );
-};
+}
 
-export default Loginform;
+export default AuthForm;

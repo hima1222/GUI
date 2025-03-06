@@ -8,7 +8,7 @@ import cover1 from '../assets/cover 1.jpg';
 const Main = () => {
   return (
     <div className="main">
-      <div className="container">
+      <div className="main_container">
         <div className="column_title">
           <h1 className="title_first">Welcome to SoulScribbles</h1>
           <p className="description_title">Fill your space with the breathings of your heart</p>
