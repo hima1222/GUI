@@ -10,7 +10,7 @@ export default function Write() {
 
   const handleNewEntrySubmit = (e) => {
     e.preventDefault();
-    // Logic for saving the new entry
+    
   };
 
   return (
@@ -46,7 +46,7 @@ export default function Write() {
               <input type="text" id="title" placeholder="Entry Title" required />
             </div>
 
-            {/* Rich Text Editor */}
+            
             <div className="form-group">
               <label htmlFor="content">Content</label>
               <textarea

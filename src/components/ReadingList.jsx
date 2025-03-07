@@ -3,10 +3,10 @@ import React from 'react';
 const ReadingList = () => {
   return (
     <div className="reading-list">
-      <h3>1 Reading List</h3>
+      <h3>0 Reading List</h3>
       <div className="list-item">
-        <h4>Hhs_200222's Reading Lists</h4>
-        <p>Reading List • 2 Stories</p>
+        <h4>username's Reading Lists</h4>
+        <p>Reading List • 0 Stories</p>
       </div>
     </div>
   );

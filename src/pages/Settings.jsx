@@ -59,15 +59,13 @@ const AccountSettings = () => {
         </div>
 
         <div className="form-group">
-          <label>
-            <input
-              type="checkbox"
-              name="joinBeta"
-              checked={formData.joinBeta}
-              onChange={handleChange}
-            />
-            Join Beta Program
-          </label>
+          <label>About</label>
+          <input
+            type="text"
+            name="tell something about youeself......"
+            value={formData.about}
+            onChange={handleChange}
+          />
         </div>
 
         <button type="submit">Submit</button>

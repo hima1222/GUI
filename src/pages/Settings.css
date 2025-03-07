@@ -13,47 +13,45 @@
 
 h2 {
   text-align: center;
-  color: #333;
+  color: #45220d;
   margin-bottom: 20px;
 }
 
 .form-group {
   margin-bottom: 15px;
+  border: none;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #555;
+  color: #763b16;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="date"] {
+input[type="date"]
+{
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ae9180;
   border-radius: 4px;
   font-size: 14px;
-}
-
-input[type="checkbox"] {
-  margin-right: 10px;
 }
 
 .submit {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #007BFF;
-  color: #fff;
+  background-color: #45220d;
+  color: #f8e5ce;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
 }
 
 .submit:hover {
-  background-color: #0056b3;
+  background-color: #763b16;
 }

@@ -19,24 +19,6 @@ const ProfilePage = () => {
       </div>
 
 
-
-      {/* <Routes>
-        <Route path="/profile/about" element={
-          <div className="profile-content">
-            <ProfileDetails />
-            <ReadingList />
-          </div>
-        } />
-        <Route path="/profile/conversations" element={<Conversations />} />
-        <Route path="/profile/following" element={<Following />} />
-      </Routes> */}
-      
-      {/* <div>
-        
-        <Outlet/>
-      </div> */}
-           
-
     </div>
   );
 };

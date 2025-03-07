@@ -4,6 +4,9 @@ import './Welcome.css';
 import SignupPage from './SignupPage';
 
 const Welcome = () => {
+
+  const Navigate = useNavigate();
+
   return (
     <div className="welcome-container">
       <div className="welcome-content">

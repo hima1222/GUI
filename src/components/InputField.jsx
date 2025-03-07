@@ -7,7 +7,7 @@ const InputField = ({ profileImage }) => {
   return (
     <div className="input-container">
       <img
-        src={profileImage || "/path/to/default-profile.jpg"} // Default image fallback
+        src={profileImage || "/path/to/default-profile.jpg"} 
         alt="Profile"
         className="input-profile-image"
       />
@@ -16,7 +16,7 @@ const InputField = ({ profileImage }) => {
         placeholder="Post a Message"
         className="message-input"
         onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)} // Optional: Hide button when not focused
+        onBlur={() => setIsFocused(false)} 
       />
       {isFocused && <button className="post-button">Post</button>}
     </div>
